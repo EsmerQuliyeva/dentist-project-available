@@ -1,0 +1,80 @@
+.clients-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
+}
+.clients-container h1 {
+  font-size: 40px;
+  text-align: center;
+}
+.clients-container p {
+  font-size: 20px;
+  color: gray;
+  text-align: center;
+}
+.clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.client {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+.client-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+.client-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.client-info p {
+  font-size: 18px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .clients-container {
+    margin-top: 0px;
+  }
+  .clients-container h1 {
+    font-size: 23px;
+  }
+  .clients-container p {
+    font-size: 18px;
+  }
+  .clients {
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .clients-container {
+    margin-top: 20px;
+  }
+  .clients-container h1 {
+    font-size: 25px;
+  }
+  .clients-container p {
+    font-size: 20px;
+  }
+  .clients {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .clients-container {
+    margin-top: 50px;
+  }
+}

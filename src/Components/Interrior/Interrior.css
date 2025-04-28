@@ -1,0 +1,298 @@
+.interrior-dentist-site-description-general {
+  position: relative;
+}
+.interrior-dentist-site {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.interrior-dentist-site-description {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: space-between;
+  max-width: 40%;
+  /* sonradan elave olunub */
+  /* width: 40%; */
+  padding: 0 20px;
+}
+.interrior-dentist-site-description-title {
+  font-size: 35px;
+}
+.interrior-dentist-site-description p {
+  font-size: 20px;
+  color: grey;
+}
+.interrior-dentist-site-description-btns {
+  display: flex;
+  gap: 30px;
+}
+.interrior-dentist-site-image-part {
+  position: relative;
+  max-width: 60%;
+}
+
+.interrior-dentist-site-image {
+  width: 100%;
+  height: 700px;
+  /* height evvel 600 idi */
+  border-radius: 10px;
+  object-fit: cover;
+}
+.services-btn {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 2px 2px 6px rgba(50, 50, 50, 0.15);
+  color: gray;
+  font-weight: bold;
+  color: #635bff;
+  line-height: 1.2;
+}
+.intro-cards {
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 15px;
+  transition: 0.3s ease;
+  position: absolute;
+  left: 52%;
+  bottom: -187px;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 6px #0000000d;
+  max-width: 1200px;
+  width: 100%;
+  padding: 10px 30px;
+  margin-bottom: 80px;
+}
+.intro-card {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  width: 400px;
+  position: relative;
+  transition: transform 0.6s ease; /* əlavə olundu və yavaşladıldı */
+}
+.intro-card:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 60%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.intro-card-icon {
+  color: #ffffff;
+  background-color: #635bff;
+  font-size: 60px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.intro-card:hover {
+  transform: translateY(-10px);
+}
+.intro-card-right-part {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+.intro-card p {
+  font-size: 17px;
+  line-height: 1.5;
+  color: gray;
+  font-weight: 500;
+}
+.intro-card p span {
+  color: #635bff;
+  font-weight: bold;
+}
+.intro-card-link {
+  color: #635bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+@media (min-width: 768px) and (max-width: 1198px) {
+  .interrior-dentist-site{
+    align-items: stretch;
+  }
+  /* .interrior-dentist-site-image {
+    max-width: 600px;
+    height: auto;
+    margin-top: 50px !important;
+  }
+  .interrior-dentist-site-description {
+    padding: 10px;
+    gap: 25px;
+  } */
+  .interrior-dentist-site-description,
+  .interrior-dentist-site-image-part {
+    flex: 1;
+  }
+
+  .interrior-dentist-site-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .interrior-dentist-site-image-part img {
+    height: 100%; 
+    object-fit: cover; /* şəkil daşmasın, içində normal görünsün */
+    width: 100%;
+  }
+  .book-btn,
+  .services-btn {
+    font-size: 10px; /* Font ölçüsünü kiçildirik */
+    padding: 10px; /* Daha az padding */
+    gap: 8px; /* Buttonlardakı boşluğu kiçildirik */
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  .intro-card:last-child {
+    border-bottom: none;
+  }
+
+  .interrior-dentist-site-description h1 {
+    font-size: 22px;
+  }
+  .interrior-dentist-site-description p {
+    font-size: 18px;
+  }
+  .intro-cards {
+    /* display: flex;
+    flex-direction: column;
+    position: static;
+    right: auto;
+    bottom: auto;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    margin-top: 30px; */
+    position: static;
+    left: 0;
+    bottom: auto;
+    flex-wrap: wrap;
+    transform: translateX(0);
+    margin-top: 30px;
+  }
+  .intro-card {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    border-right: none;
+    border-bottom: 1px solid #dcdcdc;
+    justify-content: start;
+    gap: 15px;
+  }
+  .intro-card:not(:last-child)::after {
+display:none
+}
+  .intro-card-icon {
+    font-size: 40px;
+  }
+
+  .intro-card h2 {
+    font-size: 18px;
+  }
+  .intro-card p {
+    font-size: 15px;
+  }
+  .intro-card:last-child {
+    border-bottom: none;
+  }
+  .intro-card:not(:last-child)::after {
+    content: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .interrior-dentist-site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .interrior-dentist-site-description {
+    gap: 10px;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .interrior-dentist-site-description-btns {
+    gap: 15px;
+  }
+  .interrior-dentist-site-image-part {
+    max-width: 100%;
+    width: 500px;
+  }
+  .interrior-dentist-site-image {
+    height: auto;
+  }
+  .interrior-dentist-site-description-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .book-btn,
+  .services-btn {
+    font-size: 10px;
+    padding: 10px;
+    width: 150px;
+  }
+  .interrior-dentist-site-description h1 {
+    font-size: 20px;
+  }
+  .interrior-dentist-site-description p {
+    font-size: 14px;
+  }
+  .intro-cards {
+    flex-direction: column;
+    position: static;
+    right: auto;
+    bottom: auto;
+    justify-content: center;
+    left: 0;
+    bottom: auto;
+    transform: translateX(0);
+    align-items: baseline;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .intro-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    border-right: none;
+    border-bottom: 1px solid #dcdcdc;
+    justify-content: start;
+  }
+  .intro-card-icon {
+    font-size: 40px;
+  }
+
+  .intro-card h2 {
+    font-size: 18px;
+  }
+  .intro-card p {
+    font-size: 15px;
+  }
+  .intro-card:last-child {
+    border-bottom: none;
+  }
+  .intro-card:not(:last-child)::after {
+    content: none;
+  }
+}

@@ -1,0 +1,162 @@
+.about-btn {
+  color: #635bff;
+  padding: 10px 20px; /* əlavə padding */
+  border: none;
+  outline: none;
+  background-color: #fefefe;
+  font-size: 16px; /* düymənin ölçüsünü tənzimləmək */
+  border-radius: 8px; /* yumşaq künclər */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* daha güclü kölgə */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* keçid effekti */
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.about-btn:hover {
+  transform: translateY(-2px); /* hover effekti ilə yuxarıya hərəkət */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* hover zamanı daha güclü kölgə */
+}
+.cards-general-part {
+  margin-top: 153px;
+}
+.card-slider-present {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.card-slider-present h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.slider-container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 30px 0;
+  position: relative;
+}
+.next-btn-link {
+  position: absolute;
+  top: 50%;
+  right: -60px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* tam yumru dairə */
+  background-color: #ffffff; /* içi ağ */
+  border: none; /* sərhəd yoxdur */
+  color: #635bff; /* ox rəngi */
+  font-size: 40px; /* oxun ölçüsü */
+  transition: all 0.5s ease;
+  z-index: 99;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* yüngül kölgə */
+}
+
+.prev-btn-link {
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* tam yumru dairə */
+  background-color: #ffffff; /* içi ağ */
+  border: none; /* sərhəd yoxdur */
+  color: #635bff; /* ox rəngi */
+  font-size: 40px; /* oxun ölçüsü */
+  transition: all 0.5s ease;
+  z-index: 99;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* yüngül kölgə */
+}
+.next-btn-link:hover,
+.prev-btn-link:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* daha güclü kölgə */
+  transform: translateY(-50%) scale(1.05); /* hoverda bir az böyüsün */
+}
+/* .slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 40px;
+} */
+.book-btn-cards-new {
+  background-color: #635bff;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+.card-slider {
+  margin-right: 20px; /* Kartlar arasında sağ tərəfə boşluq */
+
+  padding-bottom: 20px; /* Alt hissədə boşluq */
+}
+.card-slider:last-child {
+  margin-right: 0; /* Sonuncu kartın sağ tərəf boşluğunu sıfırlayır */
+}
+@media (max-width: 768px) {
+  .cards-general-part {
+    margin-top: 0px;
+  }
+  .card-slider-present h2 {
+    font-size: 25px;
+  }
+
+  .card-slider-present {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 5px;
+  }
+  .next-btn-link {
+    top: 50%;
+    right: -25px;
+    width: 40px;
+  }
+  .prev-btn-link {
+    top: 50%;
+    left: -25px;
+    width: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card-slider-present h2 {
+    font-size: 25px;
+  }
+  .cards-general-part {
+    margin-top: 50px;
+  }
+  .next-btn-link {
+    top: 50%;
+    right: -47px;
+  }
+  .prev-btn-link {
+    top: 50%;
+    left: -47px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1190) {
+  .cards-general-part {
+    margin-top: 80px;
+  }
+}

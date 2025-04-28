@@ -1,0 +1,126 @@
+.service-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+  position: relative;
+}
+
+.service-cards-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.service-cards-intro p {
+  font-size: 18px;
+  color: grey;
+}
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 120px; /* kartlar arasındakı normal boşluq */
+  row-gap: 60px; /* sətirlər arasındakı boşluq */
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.services_card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  flex: 0 0 360px; /* kartların normal enini verirəm */
+  max-width: 400px;
+  width: 100%;
+}
+
+.service-card-img {
+  height: 200px;
+  border-radius: 15px;
+  width: 100%;
+  object-fit: contain;
+  background-color: #f2f1ff;
+}
+
+.services_card-content {
+  padding: 10px;
+}
+.services_card-content .name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.services_card-content .description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+.service-card-learn-link {
+  color: #5d4fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* #service-cards-book-btn {
+  max-width: 200px;
+} */
+.book-btn-service-cards {
+  background-color: #635bff;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .service-cards-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .service-cards-container h1 {
+    font-size: 25px;
+  }
+
+  .service-cards-intro {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .service-cards-container p {
+    font-size: 14px;
+  }
+
+  #service-cards-book-btn {
+    max-width: 200px;
+  }
+
+  .service-cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .service-cards-intro {
+    flex-direction: column;
+  }
+  .service-cards-container h1 {
+    font-size: 25px;
+  }
+  .service-cards-container p {
+    font-size: 15px;
+  }
+}

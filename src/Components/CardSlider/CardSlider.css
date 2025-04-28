@@ -1,0 +1,135 @@
+/* 
+.about-btn {
+  color: #635bff;
+  padding: 10px 20px; /* əlavə padding */
+  border: none;
+  outline: none;
+  background-color: #fefefe;
+  font-size: 16px; /* düymənin ölçüsünü tənzimləmək */
+  border-radius: 8px; /* yumşaq künclər */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* daha güclü kölgə */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* keçid effekti */
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.about-btn:hover {
+  transform: translateY(-2px); /* hover effekti ilə yuxarıya hərəkət */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* hover zamanı daha güclü kölgə */
+}
+#card-slider-about-btn {
+  margin-top: 200px;
+}
+.card-slider-present {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 40px 0;
+}
+
+.card-slider-present h2 {
+  font-size: 40px;
+}
+
+.slider-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
+  height: auto;
+  overflow: hidden;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 6px 0 12px -4px rgba(0, 0, 0, 0.1),
+    -6px 0 12px -4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* .swiper-slide {
+  max-width: 600px !important;
+} */
+
+
+.card .card-img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  background-color: #f2f1ff;
+}
+
+.card .card-content {
+  padding: 20px;
+}
+
+.card .name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card .description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card .learn-link {
+  color: #5d4fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.swiper-pagination-bullet {
+  display: none;
+}
+@media (max-width: 768px) {
+  .card-slider-present h2 {
+    font-size: 25px;
+  }
+  #card-slider-about-btn {
+    margin-top: 40px;
+  }
+  .card .name {
+    font-size: 20px;
+  }
+
+  .card .description {
+    font-size: 14px;
+  }
+
+
+  .card {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card-slider-present h2 {
+    font-size: 25px;
+  }
+
+  .image-content .overlay {
+    margin-top: 20px;
+  }
+
+  .card .name {
+    font-size: 20px;
+  }
+
+  .card .description {
+    font-size: 14px;
+  }
+
+  .card {
+    max-width: 80%;
+  }
+} */
